@@ -1,7 +1,11 @@
+import { Imagem } from "./styles"
+import fundo from '../../assets/images/Fundo.png'
+
+
 const Header = () => (
-    <header>
-        teste
-    </header>
+    <Imagem style={{ backgroundImage: `url(${fundo})`}}>
+        
+    </Imagem>
 )
 
 export default Header
