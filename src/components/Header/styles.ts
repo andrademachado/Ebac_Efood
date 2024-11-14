@@ -37,7 +37,7 @@ export const LinkItem = styled.li`
 
     a {
         color: ${cores.vermelho};
-        font-size: 18px;
+        font-size: 22px;
         font-weight: bold;
         
     }
