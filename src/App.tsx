@@ -1,11 +1,12 @@
 import Header from "./components/Header";
+import Poster from "./components/Poster";
 import { GlobalCss } from "./styles";
 
 function App() {
   return (
     <>
       <GlobalCss />
-        <Header />
+        <Poster />
       <div className='container'>
 
       </div>
