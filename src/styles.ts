@@ -4,7 +4,8 @@ export const cores = {
     vermelho: '#E66767',
     branco: '#FFFFFF',
     bege: '#FFEBD9',
-    creme: ' #FFF8F2'
+    creme: ' #FFF8F2',
+    blue: "#000080"
 }
 
 export const GlobalCss = createGlobalStyle`
@@ -19,7 +20,16 @@ export const GlobalCss = createGlobalStyle`
 
     body {
         background-color: ${cores.creme};
-        color: ${cores.branco};
+        color: ${cores.vermelho};        
+    }
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin:  0 auto;
     }
 `
+
+
+
 
