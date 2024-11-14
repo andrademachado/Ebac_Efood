@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <GlobalCss />
-        <Poster />
+      <Header />
         <Banner />
       <div className='container'>
 

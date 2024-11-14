@@ -7,37 +7,43 @@ export const Imagem = styled.div`
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
+    `
+
+    export const Bloco = styled.div`
+        width: 1024px;
+        max-width: 1024px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+
     `
 
     export const Logo = styled.img`
-    margin-top: 38px;
-    margin-left: 150px;
-    
-    `
-export const HeaderBar = styled.header`
-    max-width: 1024px;
-    margin-bottom: 80px ; 
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 48px;
+    margin-left: 120px;
+   
     `
 
 export const Links = styled.ul`      
-    display: flex;   
-    
+    display: flex; 
+    margin-left: 0;    
+    justify-content: space-between;    
     `
 
 export const LinkItem = styled.li`
     margin-top: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
+    
 
     a {
         color: ${cores.vermelho};
-        font-size: 15px;
+        font-size: 18px;
         font-weight: bold;
+        
     }
 `
+
+
 export const Cart = styled.a`
-    margin-left: 100px;
+margin-left: 98px;
 `
