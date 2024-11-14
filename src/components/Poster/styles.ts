@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { cores } from "../../styles";
 
 
 export const Imagem = styled.div`
@@ -25,4 +26,5 @@ export const Imagem = styled.div`
     font-size: 36px;
     font-weight: bold;    
     line-height: 42px;
+    color: ${cores.vermelho};
     `

@@ -1,10 +1,10 @@
-import BanneImg from '../../assets/images/macarrao4.png'
+import BanneImg from '../../assets/images/macarrao3.jpg'
 import { Imagem } from './style'
 
 const Banner = () => (
     <>
         <Imagem style={{ backgroundImage: `url(${BanneImg})` }} >
-
+            <h2>Italiana</h2>
         </Imagem>
     </>
         
