@@ -21,7 +21,8 @@ export const Imagem = styled.div`
     `
     
     export const Texto = styled.h2`
-    margin-top: 125px;
+    margin-top: 138px;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: bold;    
+    line-height: 42px;
     `
