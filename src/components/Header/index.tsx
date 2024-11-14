@@ -1,4 +1,4 @@
-import { HeaderBar, Imagem, LinkItem, Links, Logo} from "./styles"
+import { Cart, HeaderBar, Imagem, LinkItem, Links, Logo} from "./styles"
 import fundo from '../../assets/images/Fundo.png'
 import logo from '../../assets/images/logo.png'
 
@@ -12,10 +12,10 @@ const Header = () => (
                         <a href="#">Restaurantes</a>
                     </LinkItem>
                     
-                    <Logo src={logo} width={125} height={60} alt="Ebac-Efood" /> 
+                    <Logo src={logo} width={100} height={48} alt="Ebac-Efood" /> 
                    
                     <LinkItem>
-                        <a href="#">0 produto(s) no carrinho</a>
+                        <Cart href="#">0 produto(s) no carrinho</Cart>
                     </LinkItem>
                 </Links>
             </nav>
