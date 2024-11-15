@@ -1,11 +1,16 @@
-import BanneImg from '../../assets/images/macarrao3.jpg'
-import { Imagem } from './style'
+import BannerImg from '../../assets/images/macarrao4.png'
+import {  BackImg, Texto, Title } from './style'
 
 const Banner = () => (
     <>
-        <Imagem style={{ backgroundImage: `url(${BanneImg})` }} >
-            <h2>Italiana</h2>
-        </Imagem>
+        <BackImg style={{ backgroundImage: `url(${BannerImg})` }} >
+            <div className='container'>
+                <div>
+                    <Title>Italiana</Title>
+                    <Texto>La Dolce Vita Trattoria</Texto>
+                </div>
+            </div>
+        </BackImg>
     </>
         
     
@@ -13,19 +18,3 @@ const Banner = () => (
 
 export default Banner
 
-
-{
-    /*
-    <div className='container'>
-            <Bloco>                
-                <Title>
-                    Italiana
-                </Title>
-                <Texto>
-                    La Dolce Vita Trattoria
-                </Texto>
-            </Bloco>
-
-        </div>
-    */
-}
