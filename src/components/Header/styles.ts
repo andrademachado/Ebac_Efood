@@ -16,13 +16,11 @@ export const Imagem = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;
-
     `
 
     export const Logo = styled.img`
     margin-top: 48px;
-    margin-left: 120px;
-   
+    margin-left: 138px;   
     `
 
 export const Links = styled.ul`      
@@ -33,16 +31,13 @@ export const Links = styled.ul`
 
 export const LinkItem = styled.li`
     margin-top: 60px;
-    
 
     a {
         color: ${cores.vermelho};
         font-size: 22px;
         font-weight: bold;
-        
     }
 `
-
 
 export const Cart = styled.a`
 margin-left: 98px;

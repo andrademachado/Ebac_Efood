@@ -1,7 +1,14 @@
+import { TagContainer } from './style';
+
+type Props = {
+    size?: 'small' | 'big';
+    children: JSX.Element
+}
+
 const Tag = () => (
-    <div>
+    <TagContainer>
         Nome Tag
-    </div>
+    </TagContainer>
 )
 
 export default Tag
