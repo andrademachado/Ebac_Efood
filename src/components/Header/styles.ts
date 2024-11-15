@@ -3,7 +3,7 @@ import { cores } from "../../styles";
 
 export const Imagem = styled.div`
     width: 100%;
-    height: 166px;
+    height: 186px;
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@ export const LinkItem = styled.li`
 
     a {
         color: ${cores.vermelho};
-        font-size: 22px;
+        font-size: 18px;
         font-weight: bold;
     }
 `
