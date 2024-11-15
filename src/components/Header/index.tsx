@@ -1,12 +1,11 @@
 import { Bloco, Cart,  Imagem, LinkItem, Links, Logo} from "./styles"
 import fundo from '../../assets/images/Fundo.png'
 import logo from '../../assets/images/logo.png'
-import Tag from "../Tag"
-
 
 const Header = () => (
     <Imagem style={{ backgroundImage: `url(${fundo})`}}>    
             <Bloco className='container' >
+                
             <nav >
                 <Links >
                     <LinkItem>
