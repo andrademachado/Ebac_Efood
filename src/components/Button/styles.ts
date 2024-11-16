@@ -8,6 +8,7 @@ export const  ButtonContainer = styled.button`
     font-size: 14px;
     font-weight: 700;
     padding: 4px 6px;
+    
 `
 export const ButtonLink = styled(Link)`
     background-color: ${cores.vermelho};
@@ -15,5 +16,6 @@ export const ButtonLink = styled(Link)`
     font-size: 14px;
     font-weight: 700;
     padding: 4px 6px;
+   
     text-decoration: none;
 `

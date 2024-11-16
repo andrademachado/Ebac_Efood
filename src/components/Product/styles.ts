@@ -3,15 +3,15 @@ import { cores } from "../../styles";
 
 export const Card = styled.div`
     width: 472px;
-    height: 100%;
     height: 398px;
     margin-bottom: 48px;
     background-color: ${cores.branco};
     color: ${cores.vermelho};
     display: block;
+    position: relative;
 `
 
-export const Info = styled.div`
+export const CardDescricao = styled.div`
     width: 472px;
     height: 100%;
     height: 398px;
@@ -36,11 +36,13 @@ export const Star = styled.div`
     margin-right: 8px;
 `
 export const Texto = styled.div`
-font-size: 14px;
+    color: ${cores.vermelho};
+    font-size: 14px;
     margin-top: 16px;
     margin-left: 8px;
     line-height: 22px;
     display: block;
 `
+
 
 

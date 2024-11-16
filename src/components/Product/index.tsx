@@ -1,37 +1,57 @@
 import Button from "../Button";
 import Tag from "../Tag";
-import { Card, Info, Star, Texto, Title } from "./styles";
+import { Card, CardDescricao, Star, Texto, Title } from "./styles";
 import star from '../../assets/images/star.png'
-import sushi from '../../assets/images/sushi.png'
 
-const Product = () => (
+type Props = {
+    title: string;
+    description:string;
+    infos: string[]
+    image:string
+    number: number
+}
+
+{/*
+    Propriedades =
+
+    image : Foto do sushi
+    info: Tags =  Destaque da Semana / japonesa
+    title nome do restaurante = Hioki Sushi 
+    Number : numero da estrla
+    description: Texto do paragrafo
+    Button: tipo Botão
+
+    */}
+
+const Product = ({
+    title, 
+    description, 
+    infos, 
+    image, 
+    number
+}: Props) => (
     <Card className="container" >
-        <Info>
+        <CardDescricao>
             <div>
-                <img src={sushi} alt="Prato de sushi" />
-                {/*
-            <Tag>Destaque da semana</Tag>
-            <Tag>Japonesa</Tag>
-            
-            */}
+                <img src={image} alt={title} />
+                <div>
+                    {infos.map(info => <Tag key={info}>{info}</Tag>)}
+                </div>             
             </div>
             <div>
                 <Title >
-                    <h3>Hioki Sushi </h3>
+                    <h3>{title}</h3>
                     <Star >
-                        <h3>4.9</h3>
+                        <h3>{number}</h3>
                         <img src={star} width={21} height={21} alt="Estrela" />
                     </Star >
                 </Title>
                 <Texto>
-                    <p>Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis <br />
-                        frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega <br />
-                        rápida, embalagens cuidadosas e qualidade garantida.<br />
-                        Experimente o Japão sem sair do lar com nosso delivery!</p>
-                    {/*        <Button>Saiba mais</Button>            */}
+                    {description}
                 </Texto>
+                
             </div>
-        </Info>       
+        </CardDescricao>     
         
     </Card>
 )
