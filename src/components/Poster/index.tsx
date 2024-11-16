@@ -3,6 +3,7 @@ import fundo from '../../assets/images/Fundo.png'
 import logo from '../../assets/images/logo2.png'
 
 const Poster = () => (
+    
     <Imagem style={{ backgroundImage: `url(${fundo})` }}>
         <div className='container'>
             <Bloco>
@@ -16,6 +17,7 @@ const Poster = () => (
             
         </div>
     </Imagem>
+    
 )
 
 export default Poster

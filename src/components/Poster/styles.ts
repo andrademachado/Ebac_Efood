@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { cores } from "../../styles";
 
-
 export const Imagem = styled.div`
     width: 100%;
     height: 366px;
@@ -9,7 +8,7 @@ export const Imagem = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0px;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
     `
     export const Bloco = styled.div`
     width: 539px;
@@ -18,7 +17,8 @@ export const Imagem = styled.div`
     margin-left: 240px;
     `
     export const Logo = styled.img`
-        margin-top: 40px;
+        margin-top: 64px;
+        
     `
     
     export const Texto = styled.h2`

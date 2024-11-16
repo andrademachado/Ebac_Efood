@@ -5,14 +5,15 @@ import Header from "./components/Header";
 import Poster from "./components/Poster";
 import { GlobalCss } from "./styles";
 import Product from './components/Product';
+import ProductsList from './components/ProductsList';
 
 const rotas = createBrowserRouter([
   {
     path: '/',
     element: (      
       <>
-        <Banner />
-        <Product />
+      <Poster />            
+      <ProductsList />
       </>
     )
 
@@ -22,8 +23,7 @@ const rotas = createBrowserRouter([
 function App() {
   return (
     <>
-      <GlobalCss />      
-      <Header />        
+      <GlobalCss />
       <div className='container'>
 
       </div>
