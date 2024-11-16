@@ -1,6 +1,6 @@
 import Button from "../Button";
 import Tag from "../Tag";
-import { Card, CardDescricao, Star, Texto, Title } from "./styles";
+import { Card, CardDescricao, Infos, Star, Texto, Title } from "./styles";
 import star from '../../assets/images/star.png'
 
 type Props = {
@@ -34,9 +34,9 @@ const Product = ({
         <CardDescricao>
             <div>
                 <img src={image} alt={title} />
-                <div>
+                <Infos>
                     {infos.map(info => <Tag key={info}>{info}</Tag>)}
-                </div>             
+                </Infos>             
             </div>
             <div>
                 <Title >
@@ -48,6 +48,7 @@ const Product = ({
                 </Title>
                 <Texto>
                     {description}
+                    
                 </Texto>
                 
             </div>

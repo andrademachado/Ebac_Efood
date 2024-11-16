@@ -9,6 +9,15 @@ export const Card = styled.div`
     color: ${cores.vermelho};
     display: block;
     position: relative;
+    
+`
+
+export const Infos = styled.div`
+    position: absolute;
+    top: 16px;
+    margin-left: 270px;
+    display: flex;
+    gap: 8px;    
 `
 
 export const CardDescricao = styled.div`
@@ -43,6 +52,7 @@ export const Texto = styled.div`
     line-height: 22px;
     display: block;
 `
+
 
 
 
