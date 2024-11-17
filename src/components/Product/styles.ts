@@ -69,9 +69,7 @@ export const Botao = styled.div`
     position: relative;
     margin-top: 16px;
     margin-left: 8px;
-    display: block;
-    
-   
+    display: block;   
 `
 export  const Imagem = styled.img`
     width: 100%;

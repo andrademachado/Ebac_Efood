@@ -1,9 +1,6 @@
 import Button from "../Button";
-import { Botao, Card, CardDescricao, Imagem, Infos, Star, Texto, Title } from "./styles";
-import star from '../../assets/images/star.png'
-import { ButtonContainer } from "../Button/styles";
-import Tag from "../Tag";
-import { Link } from "react-router-dom";
+import { ButtonLink, Clicker } from "../Button/styles";
+import { Card, Imagem,  Texto, Title } from "./styles";
 
 type Props = {
     title: string;
@@ -32,31 +29,18 @@ const Trattoria = ({
     image, 
     number
 }: Props) => (
-    <Card >
-        <CardDescricao>
+    <Card>       
             <div>
-                <Imagem className="image-container" src={image} alt={title} />                
-                <Infos>
-                    {infos.map(info => <Tag key={info}>{info}</Tag>)}
-                </Infos>
-            </div>
-            <div>
+                <Imagem className="image-container" src={image} alt={title} />
+            </div>           
                 <Title >
                     <h3>{title}</h3>
-                    <Star >
-                        <h3>{number}</h3>
-                        <img src={star} width={21} height={21} alt="Estrela" />
-                    </Star >
                 </Title>
                 <Texto>
                     {description}                    
+                <Clicker>Adicionar ao carrinho</Clicker>
                 </Texto>
-                <Botao>
-                <Button type="link" to="/categories" title="Clique aqui para saber mais" >Saiba mais</Button>
-                </Botao>
-            </div>
-        </CardDescricao> 
-    </Card>
+    </Card>            
 )
 
 export default Trattoria

@@ -1,83 +1,53 @@
 import styled from "styled-components";
 import { cores } from "../../styles";
-import { TagContainer } from "../Tag/style";
+import Button from '../Button'
 
 export const Card = styled.div`
-    max-width: 472px;
+    background-color: ${cores.vermelho};
+    color: ${cores.bege};
+    max-width: 320px;
     width: 100%;
-    height: 398px;
+    height: 338px;
     margin-bottom: 48px;
-    background-color: ${cores.branco};
-    color: ${cores.vermelho};
     display: block;
     position: relative;
-    ${TagContainer} {
-        margin-right: 8px;
-    }
-    
-`
-
-export const Infos = styled.div`
-    position: absolute;
-    top: 16px;
-    right: 8px;
-    display: flex;
-    gap: 8px; 
-    
-`
-
-export const CardDescricao = styled.div`    
-    height: 398px;
-    border: solid 1px;
-    color: ${cores.vermelho};
+    padding: 8px;
 
     .image-container {
-    width: 472px;
-    height: 217px;
+    width: 304px;
+    height: 167px;    
     overflow: hidden;
     object-fit: cover;
+    margin-bottom: 8px;
     }
     
 `
-
 export const Title = styled.h4`    
     font-size: 16px;
     font-weight: 900;    
-    line-height: 21px;
-    margin-left: 7px;
+    line-height: 21px;    
     display: flex;
-    justify-content: space-between;    
-    
-    h3{
-        margin-right: 8px;
-    }
-`
-export const Star = styled.div`
-    display: flex;
-    margin-right: 8px;
+    justify-content: space-between;
+    margin-bottom: 8px;
+   
+
 `
 export const Texto = styled.div`
-    color: ${cores.vermelho};
+    color: ${cores.bege};
     font-size: 14px;
-    margin-top: 16px;
-    margin-left: 8px;
-    margin-bottom: 140x;
     line-height: 22px;
     display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
 `
-export const Botao = styled.div`
-    position: relative;
-    margin-top: 16px;
-    margin-left: 8px;
-    display: block;
-    
-   
-`
+
 export  const Imagem = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
 `
+
+
 
 
 

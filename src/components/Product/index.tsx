@@ -1,9 +1,8 @@
 import Button from "../Button";
 import { Botao, Card, CardDescricao, Imagem, Infos, Star, Texto, Title } from "./styles";
 import star from '../../assets/images/star.png'
-import { ButtonContainer } from "../Button/styles";
+import { ButtonContainer, ButtonLink } from "../Button/styles";
 import Tag from "../Tag";
-import { Link } from "react-router-dom";
 
 type Props = {
     title: string;
@@ -52,7 +51,8 @@ const Product = ({
                     {description}                    
                 </Texto>
                 <Botao>
-                <Button type="link" to="/categories" title="Clique aqui para saber mais" >Saiba mais</Button>
+
+                <Button type={"link"} title={"Saiba mais"} to="/categories">Saiba mais</Button>
                 </Botao>
             </div>
         </CardDescricao> 
