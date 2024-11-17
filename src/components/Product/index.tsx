@@ -2,6 +2,7 @@ import Button from "../Button";
 import Tag from "../Tag";
 import { Card, CardDescricao, Infos, Star, Texto, Title } from "./styles";
 import star from '../../assets/images/star.png'
+import { ButtonContainer } from "../Button/styles";
 
 type Props = {
     title: string;
@@ -50,7 +51,7 @@ const Product = ({
                     {description}
                     
                 </Texto>
-                
+                <Button type="link" to="/produto" title="Clique aqui para saber mais" >Saiba mais</Button>
             </div>
         </CardDescricao>     
         
