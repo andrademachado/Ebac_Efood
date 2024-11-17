@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider, BrowserRouter, Routes, Route } fro
 import { GlobalCss } from "./styles";
 import Home from './pages/Home';
 import Categories from './pages/Categories';
+import Footer from './components/Footer';
 
 const Rotas = () => (
   <Routes>
@@ -15,9 +16,9 @@ function App() {
     <BrowserRouter>
       <GlobalCss />
       <div className='container'>
-
       </div>
       <Rotas />
+      <Footer />
     </BrowserRouter>
   )
 }
