@@ -1,8 +1,8 @@
 import Button from "../Button";
-import Tag from "../Tag";
-import { Card, CardDescricao, Infos, Star, Texto, Title } from "./styles";
+import { Botao, Card, CardDescricao, Infos, Star, Texto, Title } from "./styles";
 import star from '../../assets/images/star.png'
 import { ButtonContainer } from "../Button/styles";
+import Tag from "../Tag";
 
 type Props = {
     title: string;
@@ -31,13 +31,17 @@ const Product = ({
     image, 
     number
 }: Props) => (
-    <Card className="container" >
+    <Card >
         <CardDescricao>
             <div>
-                <img src={image} alt={title} />
+                <img src={image} width={472} height={217} alt={title} />
+                 
+                
                 <Infos>
                     {infos.map(info => <Tag key={info}>{info}</Tag>)}
                 </Infos>             
+                
+                
             </div>
             <div>
                 <Title >
@@ -48,13 +52,13 @@ const Product = ({
                     </Star >
                 </Title>
                 <Texto>
-                    {description}
-                    
+                    {description}                    
                 </Texto>
+                <Botao>
                 <Button type="link" to="/produto" title="Clique aqui para saber mais" >Saiba mais</Button>
+                </Botao>
             </div>
-        </CardDescricao>     
-        
+        </CardDescricao> 
     </Card>
 )
 

@@ -1,54 +1,25 @@
+import Food from "../../models/Food"
 import Product from "../Product"
 import { Container, List } from "./styles"
 
+export type Props = {
+    foods: Food[]
+}
 
-
-const ProductsList = () => (
+const ProductsList = ({ foods }: Props) => (
     <Container>
         <div className="container">
         <List>
-            <Product 
-                    description="Texto do parágrafo"
-                    image="//placehold.it/472x217"
-                    infos={['Destaque da Semana', 'Japonesa']}
-                    title="Nome do reastaurante" 
-                    number={4.9} 
-            />
+            {foods.map(food => (
                 <Product
-                    description="Texto do parágrafo"
-                    image="//placehold.it/472x217"
-                    infos={['Destaque da Semana', 'Japonesa']}
-                    title="Nome do reastaurante"
-                    number={4.9}
+                        key={food.id}
+                        description={food.description}
+                        image={food.image}
+                        infos={food.infos}
+                        title={food.title}
+                        number={food.number} 
                 />
-                <Product
-                    description="Texto do parágrafo"
-                    image="//placehold.it/472x217"
-                    infos={['Destaque da Semana', 'Japonesa']}
-                    title="Nome do reastaurante"
-                    number={4.9}
-                />
-                <Product
-                    description="Texto do parágrafo"
-                    image="//placehold.it/472x217"
-                    infos={['Destaque da Semana', 'Japonesa']}
-                    title="Nome do reastaurante"
-                    number={4.9}
-                />
-                <Product
-                    description="Texto do parágrafo"
-                    image="//placehold.it/472x217"
-                    infos={['Destaque da Semana', 'Japonesa']}
-                    title="Nome do reastaurante"
-                    number={4.9}
-                />
-                <Product
-                    description="Texto do parágrafo"
-                    image="//placehold.it/472x217"
-                    infos={['Destaque da Semana', 'Japonesa']}
-                    title="Nome do reastaurante"
-                    number={4.9}
-                />
+            ))}                
         </List>
         </div>
     </Container>

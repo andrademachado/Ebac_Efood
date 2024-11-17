@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { cores } from "../../styles";
 
 export const Card = styled.div`
-    width: 472px;
+    max-width: 472px;
+    width: 100%;
     height: 398px;
     margin-bottom: 48px;
     background-color: ${cores.branco};
@@ -21,8 +22,7 @@ export const Infos = styled.div`
 `
 
 export const CardDescricao = styled.div`
-    width: 472px;
-    height: 100%;
+    
     height: 398px;
     border: solid 1px;
     color: ${cores.vermelho};
@@ -49,8 +49,24 @@ export const Texto = styled.div`
     font-size: 14px;
     margin-top: 16px;
     margin-left: 8px;
+    margin-bottom: 140x;
     line-height: 22px;
     display: block;
+`
+{/*
+     position: absolute;
+    top: 16px;
+    margin-left: 270px;
+    display: flex;
+    gap: 8px; 
+    */}
+export const Botao = styled.div`
+    position: relative;
+    margin-top: 16px;
+    margin-left: 8px;
+    display: block;
+    
+   
 `
 
 
