@@ -2,7 +2,7 @@ import Poster from "../../components/Poster"
 import ProductsList from "../../components/ProductsList"
 import Food from "../../models/Food"
 import Sushi from '../../assets/images/sushi.png'
-import macarrao from '../../assets/images/macarrao4.png'
+import macarrao from '../../assets/images/macarrao5.png'
 
 const dashboard: Food[] = [
     {

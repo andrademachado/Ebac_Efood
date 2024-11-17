@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { cores } from "../../styles";
+import { TagContainer } from "../Tag/style";
 
 export const Card = styled.div`
     max-width: 472px;
@@ -10,22 +11,34 @@ export const Card = styled.div`
     color: ${cores.vermelho};
     display: block;
     position: relative;
+
+    ${TagContainer} {
+        margin-right: 8px;
+    }
     
 `
 
 export const Infos = styled.div`
     position: absolute;
     top: 16px;
-    margin-left: 270px;
+    right: 8px;
     display: flex;
-    gap: 8px;    
+    gap: 8px; 
+    
 `
 
-export const CardDescricao = styled.div`
-    
+export const CardDescricao = styled.div`    
     height: 398px;
     border: solid 1px;
     color: ${cores.vermelho};
+
+    .image-container {
+    width: 472px;
+    height: 217px;
+    overflow: hidden;
+    object-fit: cover;
+    }
+    
 `
 
 export const Title = styled.h4`    
@@ -67,6 +80,11 @@ export const Botao = styled.div`
     display: block;
     
    
+`
+export  const Imagem = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 `
 
 
