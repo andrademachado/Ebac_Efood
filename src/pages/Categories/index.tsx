@@ -1,12 +1,12 @@
-import ProductsList from "../../components/ProductsList"
 import Food from "../../models/Food"
 import Sushi from '../../assets/images/sushi.png'
 import macarrao from '../../assets/images/macarrao5.png'
 import Header from "../../components/Header"
 import Banner from "../../components/Banner"
+import TrattoriaList from "../../components/TrattoriaList"
 
 
-{/* Dashboard : conteúdos da página inicial(Home)*/}
+{/* Dashboard : conteúdos da página Trattoria*/}
 const dashboard: Food[] = [
     {
     id: 1,
@@ -47,7 +47,7 @@ const Categories = () => (
         
         <Header />
         <Banner />
-        <ProductsList foods={dashboard} />
+        <TrattoriaList foods={dashboard} />
     </>
 )
 
