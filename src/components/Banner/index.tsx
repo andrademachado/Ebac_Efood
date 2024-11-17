@@ -1,4 +1,4 @@
-import BannerImg from '../../assets/images/macarrao4.png'
+import BannerImg from '../../assets/images/macarrao5.png'
 import {  BackImg, Texto, Title } from './style'
 
 const Banner = () => (

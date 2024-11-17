@@ -3,6 +3,7 @@ import { Botao, Card, CardDescricao, Imagem, Infos, Star, Texto, Title } from ".
 import star from '../../assets/images/star.png'
 import { ButtonContainer } from "../Button/styles";
 import Tag from "../Tag";
+import { Link } from "react-router-dom";
 
 type Props = {
     title: string;
@@ -14,7 +15,7 @@ type Props = {
 
 {/*
     Propriedades =
-
+    
     image : Foto do sushi
     info: Tags =  Destaque da Semana / japonesa
     title nome do restaurante = Hioki Sushi 
@@ -51,7 +52,7 @@ const Product = ({
                     {description}                    
                 </Texto>
                 <Botao>
-                <Button type="link" to="/produto" title="Clique aqui para saber mais" >Saiba mais</Button>
+                <Button type="link" to="/categories" title="Clique aqui para saber mais" >Saiba mais</Button>
                 </Botao>
             </div>
         </CardDescricao> 

@@ -11,7 +11,6 @@ export const Card = styled.div`
     color: ${cores.vermelho};
     display: block;
     position: relative;
-
     ${TagContainer} {
         margin-right: 8px;
     }
@@ -66,13 +65,6 @@ export const Texto = styled.div`
     line-height: 22px;
     display: block;
 `
-{/*
-     position: absolute;
-    top: 16px;
-    margin-left: 270px;
-    display: flex;
-    gap: 8px; 
-    */}
 export const Botao = styled.div`
     position: relative;
     margin-top: 16px;
