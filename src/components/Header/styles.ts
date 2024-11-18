@@ -10,11 +10,12 @@ export const Imagem = styled.div`
     margin-bottom: 0px;
 
     @media (max-width: 768px) {
-        height: 150px;  
+        height: 250px;
+
     }
 
     @media (max-width: 480px) {
-        height: 120px; 
+        height: 170px; 
     }
     `
 
@@ -76,12 +77,21 @@ export const LinkItem = styled.li`
     }
 
     @media (max-width: 768px) {
-        margin-top: 20px;  
+        margin-top: 20px;
+        
+        a {
+            font-size: 16px; 
+        }
     }
 
     @media (max-width: 480px) {
         margin-top: 12px;
         font-size: 16px;
+
+        a {
+            font-size: 14px;
+        }
+
     }
 `
 
