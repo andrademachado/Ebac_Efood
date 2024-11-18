@@ -20,6 +20,22 @@ export const Card = styled.div`
     object-fit: cover;
     margin-bottom: 8px;
     }
+
+    @media (max-width: 768px) {
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 24px;
+        
+        .image-container {
+            width: 100%;
+            height: auto;
+            margin-bottom: 12px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 12px;
+    }
     
 `
 export const Title = styled.h4`    
@@ -29,7 +45,14 @@ export const Title = styled.h4`
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
-   
+    
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 12px;
+    }
 
 `
 export const Texto = styled.div`
@@ -39,6 +62,15 @@ export const Texto = styled.div`
     display: block;
     margin-bottom: 8px;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 10px;
+    }
 `
 
 export  const Imagem = styled.img`

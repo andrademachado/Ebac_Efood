@@ -14,7 +14,12 @@ export const Card = styled.div`
     ${TagContainer} {
         margin-right: 8px;
     }
-    
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 24px;
+    }
 `
 
 export const Infos = styled.div`
@@ -24,6 +29,11 @@ export const Infos = styled.div`
     display: flex;
     gap: 8px; 
     
+    @media (max-width: 768px) {
+        top: 8px;
+        right: 4px;
+        gap: 4px;
+    }
 `
 
 export const CardDescricao = styled.div`    
@@ -37,7 +47,15 @@ export const CardDescricao = styled.div`
     overflow: hidden;
     object-fit: cover;
     }
-    
+
+    @media (max-width: 768px) {
+        height: auto;
+
+        .image-container {
+            width: 100%;
+            height: 180px;
+        }
+    }    
 `
 
 export const Title = styled.h4`    
@@ -51,10 +69,20 @@ export const Title = styled.h4`
     h3{
         margin-right: 8px;
     }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 4px;
+    }
 `
 export const Star = styled.div`
     display: flex;
     margin-right: 8px;
+
+    @media (max-width: 768px) {
+        margin-right: 4px;
+    }
 `
 export const Texto = styled.div`
     color: ${cores.vermelho};
@@ -64,19 +92,33 @@ export const Texto = styled.div`
     margin-bottom: 140x;
     line-height: 22px;
     display: block;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        margin-top: 8px;
+        margin-left: 4px;
+        margin-bottom: 16px;
+        line-height: 18px;
+    }
 `
 export const Botao = styled.div`
     position: relative;
     margin-top: 16px;
     margin-left: 8px;
-    display: block;   
+    display: block;
+    
+    @media (max-width: 768px) {
+        margin-top: 8px;
+        margin-left: 4px;
+        margin-bottom: 10px;
+    }
 `
-export  const Imagem = styled.img`
+export const Imagem = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @media (max-width: 768px) {
+        height: auto;
+    }
 `
-
-
-
-

@@ -8,6 +8,14 @@ export const Imagem = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0px;
+
+    @media (max-width: 768px) {
+        height: 150px;  
+    }
+
+    @media (max-width: 480px) {
+        height: 120px; 
+    }
     `
 
     export const Bloco = styled.div`
@@ -16,17 +24,46 @@ export const Imagem = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;
+
+        @media (max-width: 768px) {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        max-width: 100%;
+    }
     `
 
     export const Logo = styled.img`
     margin-top: 48px;
-    margin-left: 138px;   
+    margin-left: 138px;
+    
+    @media (max-width: 768px) {
+        margin-top: 24px;  
+        margin-left: 50px;  
+    }
+    @media (max-width: 480px) {
+        margin-top: 16px;  
+        margin-left: 20px;  
+    }
     `
 
 export const Links = styled.ul`      
     display: flex; 
     margin-left: 0;    
-    justify-content: space-between;    
+    justify-content: space-between;
+    
+    @media (max-width: 768px) {
+        flex-direction: column;  
+        align-items: center; 
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;  
+        align-items: center;
+    }
     `
 
 export const LinkItem = styled.li`
@@ -37,8 +74,29 @@ export const LinkItem = styled.li`
         font-size: 18px;
         font-weight: bold;
     }
+
+    @media (max-width: 768px) {
+        margin-top: 20px;  
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 12px;
+        font-size: 16px;
+    }
 `
 
 export const Cart = styled.a`
 margin-left: 98px;
+
+@media (max-width: 768px) {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        margin-left: 0;
+        margin-top: 12px;
+        text-align: center
+    }
 `
