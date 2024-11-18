@@ -5,7 +5,7 @@ import logo from '../../assets/images/logo2.png'
 
 const Poster = () => (
     
-    <Imagem style={{ backgroundImage: `url(${fundo})` }}>
+    <Imagem style={{ backgroundImage: `url(${fundo})`,  }}>
         <div className='container'>
             <Bloco>
             <Logo src={logo} width={125} height={58} alt="Ebac-Efood" /> 
