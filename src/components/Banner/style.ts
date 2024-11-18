@@ -30,6 +30,22 @@ export const BackImg = styled.div`
         height: 100% ;
     }
     
+    @media (max-width: 768px) { 
+        height: 200px;
+        background-size: cover;
+
+        .containe {
+            align-items: center;
+            padding-top: 15px;
+        }
+    }
+
+    @media (max-width: 480px) { 
+        height: 150px;
+        .containe {
+            justify-content: center;
+        }
+    }
 `
 export const Title = styled.p`
     z-index: 1;
@@ -39,7 +55,18 @@ export const Title = styled.p`
     opacity: 0.7;
     font-weight: 100;    
     font-size: 32px;    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    @media (max-width: 768px) { 
+        font-size: 28px;
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
     `
     
 
@@ -50,4 +77,13 @@ font-size: 32px;
 font-weight: 900;
 line-height: 37px;
 
+@media (max-width: 768px) { 
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    @media (max-width: 480px) { 
+        font-size: 24px;
+        line-height: 28px;
+    }
 `

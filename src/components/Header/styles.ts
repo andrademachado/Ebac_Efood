@@ -18,7 +18,7 @@ export const Imagem = styled.div`
     }
     `
 
-    export const Bloco = styled.div`
+export const Bloco = styled.div`
         width: 1024px;
         max-width: 1024px;
         background-repeat: no-repeat;
@@ -36,7 +36,7 @@ export const Imagem = styled.div`
     }
     `
 
-    export const Logo = styled.img`
+export const Logo = styled.img`
     margin-top: 48px;
     margin-left: 138px;
     
