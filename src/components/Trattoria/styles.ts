@@ -31,10 +31,25 @@ export const Card = styled.div`
             height: auto;
             margin-bottom: 12px;
         }
+        
+        .button-container{ 
+            position: static;
+            transform: none;
+            margin-top: 16px;
+            font-size: 26px;
+            width: 100%;
+            height: 38px;
+        }
     }
-
     @media (max-width: 480px) {
         padding: 12px;
+
+        .button-container{ 
+            margin-top: 12px;
+            font-size: 18px;
+            height: 28px;
+        }
+        
     }
     
 `
@@ -47,13 +62,11 @@ export const Title = styled.h4`
     margin-bottom: 8px;
     
     @media (max-width: 768px) {
-        font-size: 14px;
+        font-size: 26px;
     }
-
     @media (max-width: 480px) {
-        font-size: 12px;
+        font-size: 16px;
     }
-
 `
 export const Texto = styled.div`
     color: ${cores.bege};
@@ -64,23 +77,16 @@ export const Texto = styled.div`
     cursor: pointer;
 
     @media (max-width: 768px) {
-        font-size: 12px;
+        font-size: 18px;
+        margin-top: 40px;
         margin-bottom: 12px;
     }
-
     @media (max-width: 480px) {
-        font-size: 10px;
+        font-size: 14px;
     }
 `
-
-export  const Imagem = styled.img`
+export const Imagem = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
 `
-
-
-
-
-
-

@@ -1,15 +1,13 @@
 import Button from "../Button";
 import { ButtonLink, Clicker } from "../Button/styles";
-import { Card, Imagem,  Texto, Title } from "./styles";
-
+import { Card, Imagem, Texto, Title } from "./styles";
 type Props = {
     title: string;
-    description:string;
+    description: string;
     infos: string[]
-    image:string
+    image: string
     number: number
 }
-
 {/*
     Propriedades =
     
@@ -19,28 +17,25 @@ type Props = {
     Number : numero da estrla
     description: Texto do paragrafo
     Button: tipo Botão
-
     */}
-
 const Trattoria = ({
     title,
-    description, 
-    infos, 
-    image, 
+    description,
+    infos,
+    image,
     number
 }: Props) => (
-    <Card>       
-            <div>
-                <Imagem className="image-container" src={image} alt={title} />
-            </div>           
-                <Title >
-                    <h3>{title}</h3>
-                </Title>
-                <Texto>
-                    {description}                    
-                <Clicker>Adicionar ao carrinho</Clicker>
-                </Texto>
-    </Card>            
+    <Card>
+        <div>
+            <Imagem className="image-container" src={image} alt={title} />
+        </div>
+        <Title >
+            <h3>{title}</h3>
+        </Title>
+        <Texto>
+            {description}
+            <Clicker className="button-container">Adicionar ao carrinho</Clicker>
+        </Texto>
+    </Card>
 )
-
 export default Trattoria

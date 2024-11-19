@@ -80,7 +80,7 @@ export const LinkItem = styled.li`
         margin-top: 20px;
         
         a {
-            font-size: 16px; 
+            font-size: 28px; 
         }
     }
 
@@ -89,7 +89,7 @@ export const LinkItem = styled.li`
         font-size: 16px;
 
         a {
-            font-size: 14px;
+            font-size: 18px;
         }
 
     }
