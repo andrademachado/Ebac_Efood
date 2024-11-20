@@ -18,7 +18,7 @@ type Props = {
     description: Texto do paragrafo
     Button: tipo Botão
     */}
-const Trattoria = ({
+const Perfil = ({
     title,
     description,
     infos,
@@ -38,4 +38,4 @@ const Trattoria = ({
         </Texto>
     </Card>
 )
-export default Trattoria
+export default Perfil

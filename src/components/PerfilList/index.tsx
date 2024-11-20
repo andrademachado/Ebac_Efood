@@ -1,17 +1,17 @@
 import Food from "../../models/Food"
-import Trattoria from "../Trattoria"
+import Perfil from "../Perfil"
 import { Container, List } from "./styles"
 
 export type Props = {
     foods: Food[]
 }
 
-const TrttoriaList = ({ foods }: Props) => (
+const PerfilList = ({ foods }: Props) => (
     <Container>
         <div className="container">
         <List>
             {foods.map(food => (
-                <Trattoria
+                <Perfil
                         key={food.id}
                         description={food.description}
                         image={food.image}
@@ -25,4 +25,4 @@ const TrttoriaList = ({ foods }: Props) => (
     </Container>
 )
 
-export default TrttoriaList
+export default PerfilList
