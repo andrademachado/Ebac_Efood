@@ -1,3 +1,4 @@
+import { Children } from "react";
 import Button from "../Button";
 import { ButtonLink, Clicker } from "../Button/styles";
 import { Card, Imagem, Texto, Title } from "./styles";
@@ -34,7 +35,8 @@ const Perfil = ({
         </Title>
         <Texto>
             {description}
-            <Clicker className="button-container">Adicionar ao carrinho</Clicker>
+
+            <Button type="button" title="clique aqui para adicionar ao carrinho" variant="secondary" size="big">Adicionar ao carrinho</Button>
         </Texto>
     </Card>
 )
