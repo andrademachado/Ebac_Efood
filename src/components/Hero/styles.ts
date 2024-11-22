@@ -8,9 +8,36 @@ export const CardModal = styled.div`
     background-color: ${cores.vermelho};
     color: ${cores.bege};
 `
+export const ImageModal = styled.img`
+    width: 280px;
+    height: 280px;
+    object-fit: fill;
+`
+
+
 export const CardInfo = styled.div`
     display:  flex;
+    padding: 32px;   
+
+    h3{
+        font-size: 16px;
+        margin-bottom: 16px;
+        margin-left: 24px;
+    }
+
+    p{  
+        padding: 8px;
+        margin-top: 16px;
+        margin-left: 14px;
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    button {
+        margin-top: 0px;
+        margin-left: 22px;
+    }
 `
+
 
 
 export const Card = styled.div`
