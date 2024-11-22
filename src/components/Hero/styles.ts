@@ -8,6 +8,9 @@ export const CardModal = styled.div`
     background-color: ${cores.vermelho};
     color: ${cores.bege};
 `
+export const CardInfo = styled.div`
+    display:  flex;
+`
 
 
 export const Card = styled.div`
