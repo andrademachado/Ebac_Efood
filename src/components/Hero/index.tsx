@@ -3,6 +3,18 @@ import { Card, CardInfo, CardList, CardModal, Imagem,  ImageModal,  Texto, Title
 import pizza from '../../assets/images/pizza.png'
 import close from '../../assets/images/close 1.png'
 
+type CardInfo ={
+    type: 'image' | 'video'
+    url: string
+}
+
+const mock: CardInfo[] = [
+    {
+        type:'image',
+        url: pizza
+    }    
+]
+
 const Hero = () => (
     <div className="container" >
         <CardModal>            

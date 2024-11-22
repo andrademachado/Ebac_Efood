@@ -3,10 +3,11 @@ import { cores } from "../../styles";
 import Button from '../Button'
 
 export const CardModal = styled.div`
-    width: 1024px;
+    width: 1050px;
     height: 344px;
     background-color: ${cores.vermelho};
     color: ${cores.bege};
+    position: relative;
 `
 export const ImageModal = styled.img`
     width: 280px;
@@ -17,7 +18,8 @@ export const ImageModal = styled.img`
 
 export const CardInfo = styled.div`
     display:  flex;
-    padding: 32px;   
+    padding: 32px;
+    position: relative;
 
     h3{
         font-size: 16px;
@@ -34,7 +36,7 @@ export const CardInfo = styled.div`
     }
     button {
         margin-top: 0px;
-        margin-left: 22px;
+        margin-left: 20px;
     }
 `
 
