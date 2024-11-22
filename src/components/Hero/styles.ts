@@ -2,6 +2,14 @@ import styled from "styled-components";
 import { cores } from "../../styles";
 import Button from '../Button'
 
+export const CardModal = styled.div`
+    width: 1024px;
+    height: 344px;
+    background-color: ${cores.vermelho};
+    color: ${cores.bege};
+`
+
+
 export const Card = styled.div`
     background-color: ${cores.vermelho};
     color: ${cores.bege};
@@ -9,9 +17,11 @@ export const Card = styled.div`
     width: 100%;
     height: 338px;
     margin-bottom: 48px;
+    margin-top: 40px;
     display: block;
     position: relative;
     padding: 8px;
+    grid: 1fr 1fr 1fr;
 
     .image-container {
     width: 304px;
@@ -53,6 +63,10 @@ export const Card = styled.div`
     }
     
 `
+export const CardList = styled.div`
+    display: flex;
+    column-gap: 48px;
+`
 export const Title = styled.h4`    
     font-size: 16px;
     font-weight: 900;    
@@ -90,3 +104,6 @@ export const Imagem = styled.img`
     height: 100%;
     object-fit: cover;
 `
+
+
+
