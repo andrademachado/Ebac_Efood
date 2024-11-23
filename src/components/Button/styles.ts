@@ -9,6 +9,7 @@ export const  ButtonContainer = styled.button<Props>`
     font-size: 14px;
     font-weight: 700;
     padding: 4px 6px;
+    cursor: pointer;
     padding: ${(props) => (props.size === 'small' ?  '4px 6px' : '4px 82px')};
     border: 2px solid   ${(props) => (props.variant === 'primary' ? cores.bege : cores.vermelho)};  
 ` 
@@ -21,6 +22,7 @@ export const  ButtonContainer = styled.button<Props>`
         font-weight: 700;
         padding: 4px 6px;   
         text-decoration: none;
+        cursor: pointer;
     `
     
 export const Clicker = styled.button`

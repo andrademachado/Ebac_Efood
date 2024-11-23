@@ -48,6 +48,7 @@ export const Card = styled.div`
             margin-top: 12px;
             font-size: 18px;
             height: 28px;
+            
         }
         
     }
@@ -125,6 +126,11 @@ export const CardInfo = styled.div`
     button {
         margin-top: 0px;
         margin-left: 20px;
+        
+    }
+
+    img{
+        cursor: pointer;
     }
 `
 export const Modal = styled.div`
@@ -149,6 +155,7 @@ export const Modal = styled.div`
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.83);
+        cursor: pointer;
     }
     
 `
