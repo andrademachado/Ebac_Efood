@@ -12,7 +12,6 @@ export const CardModal = styled.div`
 export const ImageModal = styled.img`
     width: 280px;
     height: 280px;
-    object-fit: fill;
 `
 
 
@@ -137,5 +136,41 @@ export const Imagem = styled.img`
     object-fit: cover;
 `
 
+export const Modal = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
 
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.73);
+    }
+    
+`
+
+export const ModalContent = styled.div`
+    max-width: 1024px;
+    position: relative;
+    z-index: 1;
+    header {
+        display: flex;
+    }
+
+    img {
+        display:  block;
+        max-width: 100%;
+    }
+
+   
+`
 

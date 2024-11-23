@@ -1,5 +1,5 @@
 import Button from "../Button";
-import { Card, CardInfo, CardList, CardModal, Imagem,  ImageModal,  Texto, Title } from "./styles";
+import { Card, CardInfo, CardList, CardModal, Imagem,  ImageModal,  Modal,  ModalContent,  Texto, Title } from "./styles";
 import pizza from '../../assets/images/pizza.png'
 import close from '../../assets/images/close 1.png'
 
@@ -15,65 +15,44 @@ const mock: CardInfo[] = [
     }    
 ]
 
-const Hero = () => (
-    <div className="container" >
-        <CardModal>            
-            <CardInfo>
-                <ImageModal src={pizza}  alt="pizza marguerita" />
-                <div>
-                <h3>Pizza Marguerita</h3>
-                <p>A pizza Margherita é uma pizza clássica da culinária italiana, reconhecida por sua simplicidade e sabor inigualável. Ela é feita com uma base de massa fina e crocante, coberta com molho de tomate fresco, queijo mussarela de alta qualidade, manjericão fresco e azeite de oliva extra-virgem. A combinação de sabores é perfeita, com o molho de tomate suculento e ligeiramente ácido, o queijo derretido e cremoso e as folhas de manjericão frescas, que adicionam um toque de sabor herbáceo. É uma pizza simples, mas deliciosa, que agrada a todos os paladares e é uma ótima opção para qualquer ocasião.</p>
-                <p> Serve: de 2 a 3 pessoas</p>
-                <Button type="button" title="clique aqui para adicionar ao carrinho" variant="secondary" size="small">Adicionar ao carrinho - R$ 60,90</Button>    
-                </div>                               
-                <img src={close}  width={16} height={16} alt="" />
-            </CardInfo>
-        </CardModal>
-        
-        <CardList>
-        <Card >
-            <div>
-                    <Imagem className="image-container" src={pizza} alt="Pizza marguerita" />
-            </div>
-            <Title >
-                <h3>Pizza Marguerita</h3>
-            </Title>
-            <Texto>
-                A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!
-                
-                    <Button type="button" title="Clique aqui para adicionar ao carrinho" variant="secondary" size="big"> Adicionar ao carrinho</Button>            </Texto>
-        </Card>
-        <Card >
-            <div>
-                    <Imagem className="image-container" src={pizza} alt="Pizza marguerita" />
-            </div>
-            <Title >
-                <h3>Pizza Marguerita</h3>
-            </Title>
-            <Texto>
-                A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!
+type Props = {
+    defultCover: string
+    name: string
+}
 
-                <Button type="button" title="clique aqui para adicionar ao carrinho" variant="secondary" size="big">Adicionar ao carrinho</Button>
-            </Texto>
-        </Card>
-        <Card >
-            <div>
-                    <Imagem className="image-container" src={pizza} alt="Pizza marguerita" />
-            </div>
-            <Title >
-                <h3>Pizza Marguerita</h3>
-            </Title>
-            <Texto>
-                A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!
-                <Button type="button" title="clique aqui para adicionar ao carrinho" variant="secondary" size="big">Adicionar ao carrinho</Button>
-            </Texto>
-        </Card>
-        </CardList>
-        
-    
+const Hero = ({ defultCover, name }: Props) => {
+    const getMediaCover = (item: CardInfo) => {
+        if(item.type === 'image') return item.url
+        return defultCover
+    }
 
+    return (
+        <> 
         
-        </div>   
+            <Modal>
+                <ModalContent className="container" >
+                    <CardModal>
+                        {mock.map((media, index) => (
+                            <CardInfo key={media.url}>
+                                <ImageModal src={getMediaCover(media)}
+                                    alt={`media ${index + 1} de ${name}`} />
+                                <div>
+                                    <h3>{name}</h3>
+                                    <p>A pizza Margherita é uma pizza clássica da culinária italiana, reconhecida por sua simplicidade e sabor inigualável. Ela é feita com uma base de massa fina e crocante, coberta com molho de tomate fresco, queijo mussarela de alta qualidade, manjericão fresco e azeite de oliva extra-virgem. A combinação de sabores é perfeita, com o molho de tomate suculento e ligeiramente ácido, o queijo derretido e cremoso e as folhas de manjericão frescas, que adicionam um toque de sabor herbáceo. É uma pizza simples, mas deliciosa, que agrada a todos os paladares e é uma ótima opção para qualquer ocasião.</p>
+                                    <p> Serve: de 2 a 3 pessoas</p>
+                                    <Button type="button" title="clique aqui para adicionar ao carrinho" variant="secondary" size="small">Adicionar ao carrinho - R$ 60,90</Button>
+                                </div>
+                                <img src={close} width={16} height={16} alt="icone de fechar" />
+                            </CardInfo>
+
+                        ))}
+                    </CardModal>
+
+                </ModalContent >
+                <div className="overlay"></div>
+            </Modal>
+        </>
 )
+}
 
 export default Hero

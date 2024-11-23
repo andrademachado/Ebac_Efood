@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import Hero from '../../components/Hero'
 import Header from '../../components/Header'
 import Banner from '../../components/Banner'
+import pizza from '../../assets/images/pizza.png'
 
 const Product = () =>{
     
@@ -14,7 +15,7 @@ const Product = () =>{
         <div>
             teste
         </div>
-        <Hero />
+            <Hero name='Pizza Marguerita' defultCover={pizza} />
         </>
     )
 }
