@@ -96,7 +96,7 @@ const Perfil = ({
                     <CardModal>
                         {mock.map((media, index) => (
                             <CardInfo key={media.url}>
-                                <ImageModal src={modal.url}
+                                <ImageModal src={modal.url} width={280} height={280}
                                     alt={`media ${index + 1} de ${name}`} />
                                 <div>
                                     <h3>{name}</h3>

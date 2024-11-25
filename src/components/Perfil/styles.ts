@@ -100,8 +100,7 @@ export const CardModal = styled.div`
     position: relative;
 `
 export const ImageModal = styled.img`
-    width: 280px;
-    height: 280px;
+object-fit:cover;
 `
 
 
