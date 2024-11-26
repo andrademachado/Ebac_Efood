@@ -14,14 +14,13 @@ interface  PerfilCard  {
 const mock: PerfilCard[] = [
     {
         type: 'image',
-        url: pizza
+        url: "",
     }
-]
+];
 
 type Props = {
     title: string;
     description: string;
-    infos: string[]
     image: string
     number: number
     defultCover:string
@@ -36,7 +35,6 @@ interface ModalState extends PerfilCard {
 const Perfil = ({
     title,
     description,
-    infos,
     image,
     number,
     defultCover,

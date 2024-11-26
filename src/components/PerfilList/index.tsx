@@ -1,31 +1,35 @@
-import Food from "../../models/Food"
 import Perfil from "../Perfil"
 import { Container, List } from "./styles"
 import pizza from '../../assets/images/pizza.png'
+import { Food } from "../../pages/Home"
 
 export type Props = {
-    foods: Food[]
+    foods: Food[];
 }
 
-const PerfilList = ({ foods }: Props) => (
+const PerfilList = ({ foods }: Props) => {
+
+    return(
     <Container>
         <div className="container">
         <List>
-            {foods.map(food => (
+            {foods.flatMap((food) => 
+            food.cardapio?.map((item) =>(
                 <Perfil
-                    key={food.id}
-                    description={food.description}
-                    image={food.image}
-                    infos={food.infos}
-                    title={food.title}
-                    number={food.number} 
-                    defultCover={pizza}
-                    name="Pizza Margurita"    
-                />
-            ))}                
+                    key={item.id}
+                    description={item.descricao}
+                    image={item.foto}
+                    defultCover={item.foto}
+                    title={item.nome}
+                    number={item.preco} 
+                    name={item.nome}                />
+            )) || [] 
+            )}                
         </List>
         </div>
     </Container>
-)
+    );
+}
+    
 
 export default PerfilList
