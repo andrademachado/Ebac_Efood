@@ -91,6 +91,7 @@ const Perfil = ({
                     </Card>
                 ))}
             </div>
+            {/*
             <Modal className={modal.isViseble ? 'visivel' : ''}>
                 <ModalContent className="container" >
                     <CardModal>
@@ -118,7 +119,9 @@ const Perfil = ({
                     }} 
                 className="overlay"
                 ></div>
-            </Modal> 
+            </Modal>
+            */}
+            
         </>
     )
 }
