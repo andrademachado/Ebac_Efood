@@ -3,19 +3,15 @@ import Hero from '../../components/Hero'
 import Header from '../../components/Header'
 import Banner from '../../components/Banner'
 import pizza from '../../assets/images/pizza.png'
+import Perfil from '../../components/Perfil'
 
 const Product = () =>{
     
-    const {id} = useParams()
+    const { id }= useParams()
     
     return (
         <>
-        <Header />
-        <Banner />
-        <div>
-            teste
-        </div>
-            <Hero name='Pizza Marguerita' defultCover={pizza} />
+        <h1>PRODUCT {id}</h1>
         </>
     )
 }
