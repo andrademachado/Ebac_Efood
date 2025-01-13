@@ -11,7 +11,7 @@ export const  ButtonContainer = styled.button<Props>`
     padding: 4px 6px;
     cursor: pointer;
     padding: ${(props) => (props.size === 'small' ?  '4px 6px' : '4px 82px')};
-    border: 2px solid   ${(props) => (props.variant === 'primary' ? cores.bege : cores.vermelho)};  
+    border: 2px solid   ${(props) => (props.variant === 'primary' ? cores.bege :'transparent')};  
 ` 
 
     

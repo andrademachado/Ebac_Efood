@@ -14,7 +14,7 @@ type Props = {
     image : Foto do sushi
     info: Tags =  Destaque da Semana / japonesa
     title nome do restaurante = Hioki Sushi 
-    Number : numero da estrla
+    Number : numero da estrela
     description: Texto do paragrafo
     Button: tipo Botão
     */}
