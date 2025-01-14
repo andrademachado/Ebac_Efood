@@ -2,11 +2,13 @@ import Banner from "../Banner";
 import Header from "../Header";
 import pizza from '../../assets/images/pizza.png'
 import PerfilList from "../PerfilList";
+import Gallery from "../Gallery";
 
 const Hero = () => (
     <>
     <Header />
     <Banner />
+    <Gallery />
     <ul>
         <PerfilList foods={[
 

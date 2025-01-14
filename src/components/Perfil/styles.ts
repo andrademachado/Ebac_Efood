@@ -1,22 +1,22 @@
 import styled from "styled-components";
 import { cores } from "../../styles";
 import Button from '../Button'
+
 export const Card = styled.div`
     background-color: ${cores.vermelho};
     color: ${cores.bege};
     max-width: 320px;
     width: 100%;
     height: 338px;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     display: block;
-    position: relative;
+    position: relative;    
     padding: 8px;
     .image-container {
     width: 304px;
     height: 167px;    
     overflow: hidden;
     object-fit: cover;
-    margin-bottom: 8px;
     }
     @media (max-width: 768px) {
         height: auto;
@@ -69,7 +69,7 @@ export const Texto = styled.div`
     font-size: 14px;
     line-height: 22px;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     cursor: pointer;
     @media (max-width: 768px) {
         font-size: 18px;

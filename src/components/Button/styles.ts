@@ -6,11 +6,12 @@ import  { Props } from '.'
 export const  ButtonContainer = styled.button<Props>`
     background-color: ${(props) => (props.variant === 'primary' ? cores.vermelho : cores.bege )};
     color:  ${(props) => (props.variant === 'primary' ? cores.bege: cores.vermelho)};
+    
     font-size: 14px;
     font-weight: 700;
     padding: 4px 6px;
     cursor: pointer;
-    padding: ${(props) => (props.size === 'small' ?  '4px 6px' : '4px 82px')};
+    padding: ${(props) => (props.size === 'small' ?  '4px 6px' : '4px 80px')};
     border: 2px solid   ${(props) => (props.variant === 'primary' ? cores.bege :'transparent')};  
 ` 
 
