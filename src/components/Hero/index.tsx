@@ -3,12 +3,14 @@ import Header from "../Header";
 import pizza from '../../assets/images/pizza.png'
 import PerfilList from "../PerfilList";
 import Gallery from "../Gallery";
+import produto from '../../assets/images/produto.png'
 
 const Hero = () => (
     <>
     <Header />
     <Banner />
-    <Gallery />
+    <Gallery name="nome do prato" defaultCover={produto} />
+
     <ul>
         <PerfilList foods={[
 

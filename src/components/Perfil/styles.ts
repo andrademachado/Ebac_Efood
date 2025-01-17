@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { cores } from "../../styles";
 import Button from '../Button'
-
 export const Card = styled.div`
     background-color: ${cores.vermelho};
     color: ${cores.bege};
@@ -35,7 +34,8 @@ export const Card = styled.div`
             margin-top: 16px;
             font-size: 26px;
             width: 100%;
-            height: 38px;
+            height: 380px;
+            color: blue;
         }
     }
     @media (max-width: 480px) {
@@ -52,7 +52,7 @@ export const Card = styled.div`
 export const Title = styled.h4`    
     font-size: 16px;
     font-weight: 900;    
-    line-height: 21px;    
+    line-height: 18px;    
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
@@ -84,4 +84,10 @@ export const Imagem = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+`
+export const BotaoPerfil = styled.div`
+    max-width: 304px;
+    margin-left: 3px;
+    margin-top: 8px;
+    
 `

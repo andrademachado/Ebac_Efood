@@ -52,7 +52,7 @@ const Product = ({
                 </Texto>
                 <Botao>
 
-                <Button type={"link"} title={"Saiba mais"} to="/categories">Saiba mais</Button>
+                <Button type={"link"} title={"Saiba mais"} size="small"  to="/categories">Saiba mais</Button>
                 </Botao>
             </div>
         </CardDescricao> 

@@ -1,23 +1,14 @@
 import Button from "../Button";
-import { ButtonLink, Clicker } from "../Button/styles";
-import { Card, Imagem, Texto, Title } from "./styles";
+import { BotaoPerfil, Card, Imagem, Texto, Title } from "./styles";
+
 type Props = {
     title: string;
     description: string;
-    infos: string[]
-    image: string
-    number: number
-}
-{/*
-    Propriedades =
-    
-    image : Foto do sushi
-    info: Tags =  Destaque da Semana / japonesa
-    title nome do restaurante = Hioki Sushi 
-    Number : numero da estrela
-    description: Texto do paragrafo
-    Button: tipo Botão
-    */}
+    infos: string[];
+    image: string;
+    number: number;
+};
+
 const Perfil = ({
     title,
     description,
@@ -25,18 +16,29 @@ const Perfil = ({
     image,
     number
 }: Props) => (
-    <Card >
+    <Card>
         <div>
             <Imagem className="image-container" src={image} alt={title} />
         </div>
-        <Title >
+        <Title>
             <h3>{title}</h3>
         </Title>
         <Texto>
             {description}
-            <Button type="button" title="clique aqui para adicionar ao carrinho" variant="secondary" size="big"  >Adicionar ao carrinho</Button>
-
+            <BotaoPerfil >
+                <Button
+                    type="link"
+                    title="Clique aqui para adicionar ao carrinho"
+                    variant="secondary"
+                    size="big"
+                    to="/product/id"
+                >
+                    Adicionar ao carrinho
+                </Button>
+            </BotaoPerfil>
+            
         </Texto>
     </Card>
-)
-export default Perfil
+);
+
+export default Perfil;
