@@ -13,8 +13,7 @@ export const Modal = styled.div`
     align-items: center;
     justify-content: center;
 
-   
-
+    
     .container {
         max-width: 1024px;
     }

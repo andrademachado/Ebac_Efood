@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { cores } from "../../styles";
 import Button from '../Button'
+
 export const Card = styled.div`
     background-color: ${cores.vermelho};
     color: ${cores.bege};

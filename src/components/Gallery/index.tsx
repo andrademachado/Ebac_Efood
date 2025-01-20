@@ -1,33 +1,29 @@
-import  pizza from '../../assets/images/produto.png'
+import pizza from '../../assets/images/produto.png'
 import close from '../../assets/images/close 1.png'
-import { Card,  Click,  Close,  Image, Modal, Texto, Titulo } from './styles'
+import { Card, Click, Close, Image, Modal, Texto, Titulo } from './styles'
 import Button from '../Button'
 import { useState } from 'react'
-
-type  GalleryItem = {
-    type: 'image'|'video'
+type GalleryItem = {
+    type: 'image' | 'video'
     url: string
 }
-
 const mock: GalleryItem[] = [
     {
         type: 'image',
         url: pizza,
     }
 ]
-
 type Props = {
-    defaultCover:string
+    defaultCover: string
     name: string
 }
 //função pra img/produto ( escolher = imagem/vídeo) ; e nome do produto;
 const Gallery = ({ defaultCover, name }: Props) => {
-    
-    const getMediaCover = (item: GalleryItem) =>{
-        if(item.type === 'image') return item.url
+
+    const getMediaCover = (item: GalleryItem) => {
+        if (item.type === 'image') return item.url
         return defaultCover
     }
-
     return (
         <>
             <Modal >
@@ -60,15 +56,13 @@ const Gallery = ({ defaultCover, name }: Props) => {
                             <Close src={close} alt="Ícone fechar" />
                         </div>
                     </Card>
-                    
+
                 ))}
                 <div className='overlay'></div>
             </Modal>
             <div>
-
             </div>
         </>
     )
 }
-
 export default Gallery
