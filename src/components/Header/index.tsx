@@ -1,11 +1,11 @@
-import { Bloco, Cart,  Imagem, LinkItem, Links, Logo} from "./styles"
+import { Bloco, Cart, Imagem, LinkItem, Links, Logo } from "./styles"
 import fundo from '../../assets/images/Fundo.png'
 import logo from '../../assets/images/logo.png'
 
 const Header = () => (
-    <Imagem style={{ backgroundImage: `url(${fundo})`}}>    
-            <Bloco className='container' >
-                
+    <Imagem style={{ backgroundImage: `url(${fundo})` }}>
+        <Bloco className='container' >
+
             <nav >
                 <Links >
                     <LinkItem>
@@ -18,7 +18,7 @@ const Header = () => (
                 </Links>
             </nav>
 
-            </Bloco>
+        </Bloco>
     </Imagem>
 )
 

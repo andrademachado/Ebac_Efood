@@ -8,7 +8,7 @@ const Product = () => {
 
     return (
         <>
-            <Hero />
+            <Hero/>
         </>
     )
 }
