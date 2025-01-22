@@ -1,5 +1,8 @@
 import Button from "../Button";
+import Gallery from "../Gallery";
 import { BotaoPerfil, Card, Imagem, Texto, Title } from "./styles";
+
+
 type Props = {
     title: string;
     description: string;
@@ -7,6 +10,7 @@ type Props = {
     image: string;
     number: number;
 };
+
 const Perfil = ({
     title,
     description,
@@ -14,7 +18,9 @@ const Perfil = ({
     image,
     number
 }: Props) => (
+    
     <Card>
+        
         <div>
             <Imagem className="image-container" src={image} alt={title} />
         </div>
@@ -34,7 +40,9 @@ const Perfil = ({
                     Adicionar ao carrinho
                 </Button>
             </BotaoPerfil>
+
         </Texto>
     </Card>
 );
+
 export default Perfil;

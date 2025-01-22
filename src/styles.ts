@@ -8,8 +8,6 @@ export const cores = {
     blue: "#000080"
 }
 
-
-
 export const GlobalCss = createGlobalStyle`
     * {
         margin: 0;
@@ -28,9 +26,7 @@ export const GlobalCss = createGlobalStyle`
     .container {
         max-width: 1024px;
         width: 100%;
-        margin:  0 auto;
-
-       
+        margin:  0 auto;       
     }
 `
 

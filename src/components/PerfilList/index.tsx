@@ -1,12 +1,16 @@
 import Food from "../../models/Food"
+import Gallery from "../Gallery"
 import Perfil from "../Perfil"
 import { Container, List } from "./styles"
+
+
 export type Props = {
     foods: Food[]
 }
 const PerfilList = ({ foods }: Props) => (
     <Container>
         <div className="container">
+            
             <List>
                 {foods.map(food => (
                     <Perfil

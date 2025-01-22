@@ -1,34 +1,49 @@
-import pizza from '../../assets/images/produto.png'
-import close from '../../assets/images/close 1.png'
-import { Card, Click, Close, Image, Modal, Texto, Titulo } from './styles'
-import Button from '../Button'
-import { useState } from 'react'
+import pizza from '../../assets/images/produto.png';
+import close from '../../assets/images/close 1.png';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { Click, Close, Image, Modal, ModalContent, Texto, Titulo } from './styles';
+import Button from '../Button';
+import { useState } from 'react';
+
+//tipagem da função pra ModalAberto ou ModalFechado
+export type ModalState = {
+    modalEstaAberto: boolean
+}
+
+//tipagem pro tipo de mídea .Se vai ser vídeo ou imagem
 type GalleryItem = {
     type: 'image' | 'video'
     url: string
 }
+
+//código mockado, é um código rígido que serve apenas pra fim de preenchimento , até podermos fazer a substituição pelos dados da API .
 const mock: GalleryItem[] = [
     {
         type: 'image',
         url: pizza,
     }
 ]
+
 type Props = {
     defaultCover: string
     name: string
 }
+
 //função pra img/produto ( escolher = imagem/vídeo) ; e nome do produto;
 const Gallery = ({ defaultCover, name }: Props) => {
-
+    //função useState pra modal
+    const [modalEstaAberto, setmodalEstaAberto] = useState(true);
     const getMediaCover = (item: GalleryItem) => {
         if (item.type === 'image') return item.url
         return defaultCover
     }
     return (
         <>
-            <Modal >
+        
+            <Modal className={modalEstaAberto ? 'visivel'  : ''}>
                 {mock.map((media, index) => (
-                    <Card className='container' key={media.url} >
+                    <ModalContent className='container' key={media.url}  >
                         <Image src={getMediaCover(media)}
                             width={280} height={280}
                             alt={`Mídia ${index + 1} de ${name}`} />
@@ -50,19 +65,41 @@ const Gallery = ({ defaultCover, name }: Props) => {
                             </Texto>
                             <Click >
                                 <Button type="button" title="clique aqui para adicionar ao carrinho" variant="secondary" size="small"  >Adicionar ao carrinho  - R$ 60,90 </Button>
-                            </Click>
+                            </Click>                            
                         </div>
-                        <div>
-                            <Close src={close} alt="Ícone fechar" />
-                        </div>
-                    </Card>
+                        <Link to="/categories">
+                            <Close
+                                src={close}
+                                alt="Ícone fechar"
+                                onClick={() => setmodalEstaAberto(false)}
+                            />
+                        </Link>                        
+                    </ModalContent>
 
-                ))}
-                <div className='overlay'></div>
-            </Modal>
-            <div>
-            </div>
+                ))}                
+                <Link to="/categories">
+                    <div className="overlay" onClick={() => setmodalEstaAberto(false)}></div>
+                </Link>
+            </Modal>            
         </>
     )
 }
 export default Gallery
+
+{/*
+    /////esse códigos abaixo com links foram desenvolvidos pra fechar a modal e retornae a pagina de origem.//////
+    
+    <Link to="/categories">
+                            <Close
+                                src={close}
+                                alt="Ícone fechar"
+                                onClick={() => setmodalEstaAberto(false)}
+                            />
+                        </Link>                        
+                    </ModalContent>
+
+                ))}                
+                <Link to="/categories">
+                    <div className="overlay" onClick={() => setmodalEstaAberto(false)}></div>
+                </Link>
+    */}
