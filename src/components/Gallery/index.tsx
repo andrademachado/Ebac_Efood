@@ -40,8 +40,8 @@ const Gallery = ({ defaultCover, name }: Props) => {
     }
     return (
         <>
-        
-            <Modal className={modalEstaAberto ? 'visivel'  : ''}>
+
+            <Modal className={modalEstaAberto ? 'visivel' : ''}>
                 {mock.map((media, index) => (
                     <ModalContent className='container' key={media.url}  >
                         <Image src={getMediaCover(media)}
@@ -65,7 +65,7 @@ const Gallery = ({ defaultCover, name }: Props) => {
                             </Texto>
                             <Click >
                                 <Button type="button" title="clique aqui para adicionar ao carrinho" variant="secondary" size="small"  >Adicionar ao carrinho  - R$ 60,90 </Button>
-                            </Click>                            
+                            </Click>
                         </div>
                         <Link to="/categories">
                             <Close
@@ -73,14 +73,14 @@ const Gallery = ({ defaultCover, name }: Props) => {
                                 alt="Ícone fechar"
                                 onClick={() => setmodalEstaAberto(false)}
                             />
-                        </Link>                        
+                        </Link>
                     </ModalContent>
 
-                ))}                
+                ))}
                 <Link to="/categories">
                     <div className="overlay" onClick={() => setmodalEstaAberto(false)}></div>
                 </Link>
-            </Modal>            
+            </Modal>
         </>
     )
 }

@@ -1,62 +1,55 @@
 import Button from "../Button";
 import { Botao, Card, CardDescricao, Imagem, Infos, Star, Texto, Title } from "./styles";
-import star from '../../assets/images/star.png'
-import { ButtonContainer, ButtonLink } from "../Button/styles";
+import star from '../../assets/images/star.png';
 import Tag from "../Tag";
 
 type Props = {
+    id: number;
     title: string;
-    description:string;
-    infos: string[]
-    image:string
-    number: number
-}
-
-{/*
-    Propriedades =
-    
-    image : Foto do sushi
-    info: Tags =  Destaque da Semana / japonesa
-    title nome do restaurante = Hioki Sushi 
-    Number : numero da estrla
-    description: Texto do paragrafo
-    Button: tipo Botão
-
-    */}
+    destacado?: boolean;
+    infos: string[];
+    description: string;
+    image: string;
+    number: number;
+};
 
 const Product = ({
+    id,
     title,
-    description, 
-    infos, 
-    image, 
-    number
+    description,
+    infos,
+    image,
+    number,
+    destacado,
 }: Props) => (
-    <Card >
+    <Card>
         <CardDescricao>
             <div>
-                <Imagem className="image-container" src={image} alt={title} />                
+                <Imagem className="image-container" src={image} alt={title} />
                 <Infos>
-                    {infos.map(info => <Tag key={info}>{info}</Tag>)}
+                    {infos.map((info) => (
+                        <Tag key={info}>{info}</Tag>
+                    ))}
+                    {destacado && <Tag key="destaque">Destaque da Semana</Tag>}
                 </Infos>
             </div>
             <div>
-                <Title >
+                <Title>
                     <h3>{title}</h3>
-                    <Star >
+                    <Star>
                         <h3>{number}</h3>
                         <img src={star} width={21} height={21} alt="Estrela" />
-                    </Star >
+                    </Star>
                 </Title>
-                <Texto>
-                    {description}                    
-                </Texto>
+                <Texto>{description}</Texto>
                 <Botao>
-
-                <Button type={"link"} title={"Saiba mais"} size="small"  to="/categories">Saiba mais</Button>
+                    <Button type={"link"} title={"Saiba mais"} size="small" to="/categories">
+                        Saiba mais
+                    </Button>
                 </Botao>
             </div>
-        </CardDescricao> 
+        </CardDescricao>
     </Card>
-)
+);
 
-export default Product
+export default Product;

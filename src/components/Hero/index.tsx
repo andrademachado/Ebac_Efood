@@ -1,14 +1,10 @@
-import Banner from "../Banner";
-import Header from "../Header";
 import pizza from '../../assets/images/pizza.png'
 import PerfilList from "../PerfilList";
-import Gallery from "../Gallery";
-import produto from '../../assets/images/produto.png'
-import Categories from "../../pages/Categories";
 
 const Hero = () => (
     <>
         <ul>
+            {/*
             <PerfilList foods={[
 
                 {
@@ -58,6 +54,7 @@ const Hero = () => (
                     number: 4.9
                 }
             ]} />
+            */}
         </ul>
         <div>Hero TESTE</div>
     </>

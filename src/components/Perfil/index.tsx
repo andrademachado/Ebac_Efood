@@ -18,9 +18,9 @@ const Perfil = ({
     image,
     number
 }: Props) => (
-    
+
     <Card>
-        
+
         <div>
             <Imagem className="image-container" src={image} alt={title} />
         </div>

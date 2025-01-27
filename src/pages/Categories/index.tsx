@@ -6,16 +6,16 @@ import Banner from "../../components/Banner"
 import PerfilList from "../../components/PerfilList"
 
 
-{/* Dashboard : conteúdos da página Perfil*/}
+{/* Dashboard : conteúdos da página Perfil*/ }
 const dashboard: Food[] = [
     {
-    id: 1,
+        id: 1,
         description: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-        title:'Pizza Marguerita ',
+        title: 'Pizza Marguerita ',
         infos: ['', ''],
         image: pizza,
         number: 4.9
-    }, 
+    },
     {
         id: 2,
         description: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
@@ -30,7 +30,7 @@ const dashboard: Food[] = [
         infos: ['', ''],
         image: pizza,
         number: 4.9
-    }, 
+    },
     {
         id: 4,
         description: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
@@ -38,7 +38,7 @@ const dashboard: Food[] = [
         infos: ['', ''],
         image: pizza,
         number: 4.9
-    }, 
+    },
     {
         id: 5,
         description: 'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
@@ -58,10 +58,10 @@ const dashboard: Food[] = [
 
 const Categories = () => (
     <>
-        
+
         <Header />
         <Banner />
-        <PerfilList foods={dashboard}/>
+        <PerfilList foods={dashboard} />
     </>
 )
 

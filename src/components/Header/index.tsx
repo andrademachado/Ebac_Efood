@@ -5,7 +5,6 @@ import logo from '../../assets/images/logo.png'
 const Header = () => (
     <Imagem style={{ backgroundImage: `url(${fundo})` }}>
         <Bloco className='container' >
-
             <nav >
                 <Links >
                     <LinkItem>
